@@ -5,7 +5,7 @@ $off-white: #ededed;
 $dark-gray: #666;
 $medium-gray: #6c757d;
 $light-gray: #c2c2c2;
-$blue: #237cbe;
+$blue: whitesmoke;
 $light-blue: lighten($blue, 40%);
 $orange: #e8890c;
 $yellow: #ffc107;
@@ -50,7 +50,7 @@ header {
     @extend .navbar, .navbar-expand-md;
 
     a {
-      color: $secondary-link-color;
+      color: gray;
     }
 
     a.button {
@@ -86,8 +86,8 @@ header {
 
         a:hover:not(.button),
         a.active {
-          color: $off-white;
-          border-bottom: 1px solid $off-white;
+          color: black;
+          border-bottom: 1px solid black;
         }
 
         .button {
