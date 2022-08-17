@@ -86,8 +86,8 @@ header {
 
         a:hover:not(.button),
         a.active {
-          color: black;
-          border-bottom: 1px solid black;
+          color: $off-white;
+          border-bottom: 1px solid $off-white;
         }
 
         .button {
