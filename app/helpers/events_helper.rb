@@ -9,7 +9,11 @@ module EventsHelper
     end
 
     def day_and_time(event)
-        event.starts_at.strftime("%B %d at %I:%M %P")
+        if event.starts_at
+          event.starts_at.strftime("%B %d at %I:%M %P")
+        else
+          "None"
+        end
     end
 
 end

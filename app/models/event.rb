@@ -10,7 +10,7 @@ class Event < ApplicationRecord
     validates :capacity, numericality: { only_integer: true, greater_than: 0 }
 
     validates :image_file_name, format: {
-    with: /\w+\.(jpg|jpeg|png)\z/i,
+    with: /\w+\.(jpg|jpeg|png|webp)\z/i,
     message: "must be a JPG or PNG image"
     }
 

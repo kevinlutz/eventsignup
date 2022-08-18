@@ -5,7 +5,7 @@ $off-white: #ededed;
 $dark-gray: #666;
 $medium-gray: #6c757d;
 $light-gray: #c2c2c2;
-$blue: whitesmoke;
+$blue: #237cbe;
 $light-blue: lighten($blue, 40%);
 $orange: #e8890c;
 $yellow: #ffc107;
@@ -50,7 +50,7 @@ header {
     @extend .navbar, .navbar-expand-md;
 
     a {
-      color: gray;
+      color: $secondary-link-color;
     }
 
     a.button {
