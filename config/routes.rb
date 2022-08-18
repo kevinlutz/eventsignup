@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :registrations
+  
   root 'events#index'
   # get '/events' => "events#index"
   # get 'events/new' => 'events#new'
@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   # get 'events/:id/edit' => "events#edit", as: 'edit_event'
   # patch 'events/:id' => 'events#update'
 
-  resources :events
+  resources :events do
+    resources :registrations
+  end
 end
