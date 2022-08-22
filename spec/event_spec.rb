@@ -1,4 +1,4 @@
-require relative 'event'
+require 'rails-helper'
 
 describe Event do
 
@@ -9,7 +9,7 @@ describe Event do
     end
 
     it "has a capacity greater than zero" do
-        event = Event.new(name: "Coachella", location: "Palm Desert", price: 600, created_at: 3/4/2022, updated_at: 3/4/2022, started_at: 3/4/2022, description: "music festival", image_file_name: "placeholder.jpeg", capacity: 1)
+        event = Event.new(name: "Coachella"))
 
         event.capacity.should < 0
     end
